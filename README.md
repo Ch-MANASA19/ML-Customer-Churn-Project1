@@ -1,5 +1,6 @@
 # ML-Customer-Churn-Project1
 # TeleConnect ML Assignment
+End-to-end ML project for churn prediction and revenue forecasting.
 ##  Project Overview
 
 This project focuses on solving two business problems:
