@@ -1,90 +1,58 @@
-# ML-Customer-Churn-Project1
-# TeleConnect ML Assignment
-End-to-end ML project for churn prediction and revenue forecasting.
-##  Project Overview
+TeleConnect ML Assignment
+📌 Project Overview
 
-This project focuses on solving two business problems:
+This project presents an end-to-end machine learning solution for analyzing customer behavior, with a focus on churn prediction and revenue forecasting.
 
-* Predict customer churn (Classification)
-* Forecast monthly revenue (Regression)
+The assignment is structured across multiple stages and has been implemented using two well-organized notebooks for clarity and modular execution.
 
----
+📊 Dataset
+Telco Customer Churn Dataset (Kaggle)
+Total Records: 7043
+Features: 21
+⚙️ Implementation Details
+📘 01_EDA.ipynb
 
-##  Dataset
+This notebook focuses on initial data exploration and visualization:
 
-* Source: Kaggle Telco Customer Churn Dataset
-* Records: 7043 customers
-* Features: 21
+Data loading and inspection
+Churn distribution analysis
+Feature-level exploration
+Visual insights using plots and charts
+📘 02_preprocessing.ipynb
 
----
+This notebook covers the core machine learning pipeline:
 
-##  Workflow
-
-1. Exploratory Data Analysis (EDA)
-2. Data Preprocessing & Feature Engineering
-3. Classification Models
-4. Regression Models
-5. Model Interpretation (SHAP, PDP)
-
----
-
-##  Models Used
-
-* Logistic Regression
-* Decision Tree
-* Random Forest
-* SVM
-* KNN
-
----
-
-##  Results
-
-* Best Classification Model: Random Forest
-
-* ROC-AUC Score: ~0.92
-
-* Best Regression Model: Random Forest Regressor
-
-* RMSE:~ 1.5
-
----
-
-##  Key Insight
-
-Customers with short tenure and high monthly charges are more likely to churn.
-Long-term customers tend to generate stable revenue.
-
----
-
-##  Libraries Used
-
-pandas, numpy, matplotlib, seaborn, scikit-learn, shap
-
----
-
-##  Project Structure
-
-ML-Customer-Churn-Assignment/
-├── data/
-├── notebooks/
-│   ├── churn_classification.ipynb
-│   ├── revenue_regression.ipynb
-├── report.pdf
-├── requirements.txt
-└── README.md
-
----
-
-##  How to Run
+🔹 Data Preprocessing
+Handling missing values
+Data type transformations
+Encoding categorical variables
+🔹 Classification — Churn Prediction
+Logistic Regression
+Random Forest
+Evaluation using Accuracy and ROC-AUC
+🔹 Regression — Revenue Forecasting
+Linear Regression
+Random Forest Regressor
+Evaluation using RMSE
+🔹 Model Interpretation & Business Recommendations
+Feature importance analysis
+Identification of key churn drivers
+Actionable business insights derived from model outcomes
+🏆 Results
+Best Classification Model: Random Forest (ROC-AUC ≈ 0.92)
+Best Regression Model: Random Forest Regressor
+RMSE: ~1.5
+💡 Key Insights
+Customers with shorter tenure show a higher likelihood of churn
+Higher monthly charges correlate with increased churn probability
+Long-term customers contribute significantly to stable revenue streams
+📁 Project Structure
+01_EDA.ipynb
+02_preprocessing.ipynb
+report.pdf
+requirements.txt
+README.md
+▶️ How to Run
 
 pip install -r requirements.txt
 jupyter notebook
-
----
-
-##  Notes
-
-* Make sure notebooks run without errors
-* Update RMSE value before submission
-* Keep repository public
