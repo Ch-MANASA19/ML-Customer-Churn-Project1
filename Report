@@ -1,0 +1,48 @@
+TeleConnect ML Assignment Report
+1. Problem Statement
+The goal of this project is to analyze customer data and solve two key business problems:
+•	Predict whether a customer will churn (Classification)
+•	Estimate customer revenue (Regression)
+________________________________________
+2. Dataset Description
+The dataset used is the Telco Customer Churn dataset from Kaggle.
+•	Total Records: 7043
+•	Features: 21
+•	Includes customer details like tenure, monthly charges, contract type, etc.
+________________________________________
+3. Data Preprocessing
+•	Converted TotalCharges to numeric format
+•	Removed missing values
+•	Encoded categorical variables using one-hot encoding
+•	Dropped unnecessary columns like customerID
+________________________________________
+4. Exploratory Data Analysis (EDA)
+•	Visualized churn distribution
+•	Analyzed relationships between features
+•	Used correlation heatmap to understand feature importance
+________________________________________
+5. Models Used
+🔹 Classification Models
+•	Logistic Regression
+•	Random Forest
+🔹 Regression Models
+•	Linear Regression
+•	Random Forest Regressor
+________________________________________
+6. Results
+Classification:
+•	Best Model: Random Forest
+•	ROC-AUC Score: ~0.92
+Regression:
+•	Best Model: Random Forest Regressor
+•	RMSE: ~ 1.5
+________________________________________
+7. Key Insights
+•	Customers with low tenure are more likely to churn
+•	High monthly charges increase churn probability
+•	Long-term customers generate stable revenue
+________________________________________
+8. Conclusion
+This project successfully applied machine learning techniques to predict customer churn and estimate revenue.
+Random Forest performed best for both classification and regression tasks. The insights gained from this analysis can help businesses improve customer retention and revenue planning.
+
